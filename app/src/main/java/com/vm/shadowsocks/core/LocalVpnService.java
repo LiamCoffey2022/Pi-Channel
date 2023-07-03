@@ -366,27 +366,9 @@ public class LocalVpnService extends VpnService implements Runnable {
             if (ProxyConfig.IS_DEBUG)
                 System.out.printf("addRoute for FAKE_NETWORK: %s/%d\n", CommonMethods.ipIntToString(ProxyConfig.FAKE_NETWORK_IP), 16);
         } else {
-            builder.addRoute("0.0.0.0", 0);
+            builder.addRoute("0.0.0.0", 0); 
             if (ProxyConfig.IS_DEBUG)
                 System.out.printf("addDefaultRoute: 0.0.0.0/0\n");
-        }
-
-
-        Class<?> SystemProperties = Class.forName("android.os.SystemProperties");
-        Method method = SystemProperties.getMethod("get", new Class[]{String.class});
-        ArrayList<String> servers = new ArrayList<String>();
-        for (String name : new String[]{"net.dns1", "net.dns2", "net.dns3", "net.dns4",}) {
-            String value = (String) method.invoke(null, name);
-            if (value != null && !"".equals(value) && !servers.contains(value)) {
-                servers.add(value);
-                if (value.replaceAll("\\d", "").length() == 3){//防止IPv6地址导致问题
-                    builder.addRoute(value, 32);
-                } else {
-                    builder.addRoute(value, 128);
-                }
-                if (ProxyConfig.IS_DEBUG)
-                    System.out.printf("%s=%s\n", name, value);
-            }
         }
 
         if (AppProxyManager.isLollipopOrAbove){
