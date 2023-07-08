@@ -11,4 +11,4 @@ Please enjoy it.
 4. Launch the Pi App. It should connect to Pi Network now.
 
 # Trouble Shooting
-If you can't connect to Pi Network, please close the Pi Channel App and the Pi App and try steps 1-4 above.
+If you can't connect to Pi Network, please close the Pi Channel App and the Pi App. Then restart them again.
