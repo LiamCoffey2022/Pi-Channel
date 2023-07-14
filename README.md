@@ -1,8 +1,8 @@
 # Pi Channel
 Latest version v0.1.5. [Download it here](https://github.com/LiamCoffey2022/Pi-Channel/releases/ "Pi Channel").
-Pi Channel is derived from Shadowsocks for Android.
 Pi Channel is highly optimized for Pi Network. You can connect to Pi Network quickly and freely with Pi Channel.
-Please enjoy it.
+Pi Channel is a safe app that only requires network permission from your phone.
+
 
 # User Guide
 1. Download the Pi Channel apk to your Android phone and install it.
