@@ -1,7 +1,7 @@
 # Pi Channel
 Latest version v0.1.6. [Download it here](https://github.com/LiamCoffey2022/Pi-Channel/releases/ "Pi Channel").
 
-Pi Channel is a VＰN highly optimized for Pi Network. 
+Pi Channel is a V&#x0050;N highly optimized for Pi Network. 
 
 Add PiAI(beta). You can ask anything about PI.
 
